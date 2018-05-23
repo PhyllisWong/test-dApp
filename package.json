@@ -1,0 +1,25 @@
+{
+  "name": "testdapp",
+  "version": "1.0.0",
+  "description": "test",
+  "main": "index.js",
+  "dependencies": {
+    "ethereumjs-testrpc": "^6.0.3",
+    "solc": "^0.4.24",
+    "web3": "^1.0.0-beta.34"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PhyllisWong/test-dApp.git"
+  },
+  "author": "Phyllis",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PhyllisWong/test-dApp/issues"
+  },
+  "homepage": "https://github.com/PhyllisWong/test-dApp#readme"
+}

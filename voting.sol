@@ -7,7 +7,7 @@ contract Voting {
     /* mapping field below is equivalent to an associative array or hash.
     The key of the mapping is candidate name stored as type bytes32 and value is
     an unsigned integer to store the vote count aka: (key value pair)*/
-    mapping (bytes32 => uint8) public votesReceived
+    mapping (bytes32 => uint8) public votesReceived;
 
     /* Solidity doesn't allow you to pass in an array of strings in the constructor
     (yet). We will use an array of bytes32 instead to store the list of candidates.*/
@@ -17,7 +17,7 @@ contract Voting {
     to the blockchain. When we deploy the contract, we will pass an array of
     candidates in the election.*/
     function Voting(bytes32[] candidateNames) {
-        cadidatesList = candidateNames
+        cadidatesList = candidateNames;
     }
 
     // This function returns the total votes a candidate has reveived so far.
@@ -34,7 +34,7 @@ contract Voting {
     }
 
     // Validates if a candidate is valid
-    function validCandidate(bytes32 candidate) return (bool) {
+    function validCandidate(bytes32 candidate) returns (bool) {
         for(uint i = 0; i < candidateList.length; i++) {
             if (candidateList[i] == candidate) {
                 return true;
