@@ -43,3 +43,4 @@ contract Voting {
         return false;
     }
 }
+// Comment to test commits
